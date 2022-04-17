@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/button.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script defer src="./scripts/script.js"></script>
+    <title>Tracking Map Workout</title>
+</head>
+<body>
+<div class="box">
+    <ul class="exercising">
+        <form class="table hide">
+            <div class="table__row">
+                <label class="table__label">How</label>
+                <select class="table__input table__input__how">
+                    <option value="boxing">Boxing</option>
+                    <option value="boxing">Running</option>
+                </select>
+            </div>
+
+            <div class="table__row">
+                <label class="table__label">Distance</label>
+                <input class="table__input table__input--distance" placeholder="km"/>
+            </div>
+
+            <div class="table__row">
+                <label class="table__label">Time</label>
+                <input class="table__input table__input--time" placeholder="min" />
+            </div>
+
+            <div class="table__row ">
+                <label class="table__label">Length</label>
+                <input class="table__input table__input--length" placeholder="meters" />
+            </div>
+
+            <div class="table__row table__row--hide">
+                <label class="table__label">Gain</label>
+                <input class="table__row table__input--gain">
+                </div>
+
+            <button class="table__btn">check</button>
+        </form>
+
+<!--        <li class="exercise exercise-running">-->
+
+<!--            <h3 class="exercise__type">Running on Jan 2022</h3>-->
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+<!--        </li>-->
+
+<!--        <li class="exercise exercise-boxing">-->
+
+<!--            <h3 class="exercise__type">Running on Jan 2022</h3>-->
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚴</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+
+<!--            <div class="exercise__info">-->
+<!--                <span class="exercise__emoji">🚶</span>-->
+<!--                <span class="exercise__value">5.2</span>-->
+<!--                <span class="exercise__unit">k.m.</span>-->
+<!--            </div>-->
+<!--        </li>-->
+    </ul>
+
+</div>
+    <div id="map">
+        <div>
+            <h1> the button</h1>
+            <button class="button">Click Me!</button>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
